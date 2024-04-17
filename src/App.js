@@ -5,9 +5,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Teste de Portfólio com Hosting atualizado.
+          Portfólio Hosted on GitHub Pages.
         </p>
-        <h1>Funcionou</h1>
       </header>
     </div>
   );
