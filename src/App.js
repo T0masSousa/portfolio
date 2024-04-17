@@ -8,6 +8,7 @@ function App() {
         <p>
           Teste de Portfólio com Hosting atualizado.
         </p>
+        <h1>Funcionou</h1>
       </header>
     </div>
   );
