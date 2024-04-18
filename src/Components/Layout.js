@@ -12,7 +12,7 @@ const Layout = () => {
     return(
 
         <div>
-            <nav className="shadow navbar">
+            <nav className="shadow navbar bg-success">
                 <Link to="/">
                     <Logo className="text-start ms-3 pt-3 pb-4" width="30%" heigth="30%"/>
                 </Link>
