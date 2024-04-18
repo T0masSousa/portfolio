@@ -24,7 +24,7 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <div className="w-100">
-    <BrowserRouter basename='/portfolio'>
+    <BrowserRouter basename='/'>
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Homepage/>}/>

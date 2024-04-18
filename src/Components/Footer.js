@@ -11,13 +11,13 @@ const Footer = () => {
       <p>Reach out to me:</p>
       <div className="d-flex justify-content-center mb-3">
         <a href="https://github.com/T0masSousa" target="_blank" rel="noreferrer" className="mx-2">
-          <FaGithub className="fs-1"/> 
+          <FaGithub className="fs-3"/> 
         </a>
         <a href="https://www.linkedin.com/in/tomás-sousa-a96507179/" target="_blank" rel="noreferrer" className="mx-2">
-          <FaLinkedinIn className="fs-1"/> 
+          <FaLinkedinIn className="fs-3"/> 
         </a>
         <a href="https://www.instagram.com/tomas.rafael.sousa/" target="_blank" rel="noreferrer" className="mx-2">
-          <FaInstagram className="fs-1"/> 
+          <FaInstagram className="fs-3"/> 
         </a>
       </div>
       <p>Copyright © 2024</p>
