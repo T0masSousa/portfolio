@@ -15,7 +15,7 @@ ___
 
 ## Author
 
-- @T0masSousa
+- [@T0masSousa]('https://github.com/T0masSousa')
 ---
 
 
