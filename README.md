@@ -10,12 +10,12 @@ ___
 - This portfolio has been constructed using _`React.js`_;
 - It showcases projects executed in `PHP`,`SQL`,`JS` and `React`while also showing some use of`APIs`.
 
-[Access the source code here]('https://github.com/T0masSousa/portfolio/tree/main/src')
+[Access the source code here](https://github.com/T0masSousa/portfolio/tree/main/src)
 
 
 ## Author
 
-- [@T0masSousa]('https://github.com/T0masSousa')
+- [@T0masSousa](https://github.com/T0masSousa)
 ---
 
 
