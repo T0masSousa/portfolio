@@ -16,6 +16,9 @@ import Error from './Pages/Error';
 //RESTO DOS COMPONENTES
 import Layout from './Components/Layout';
 
+//FOOTER
+import Footer from './Components/Footer';
+
 
 //FUNÇÃO EXPORTADA
 function App() {
@@ -30,6 +33,7 @@ function App() {
                     <Route path="*" element={<Error/>}/>
                 </Route>
             </Routes>
+            <Footer/>
     </BrowserRouter>
 </div>
   );
