@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
 
-    <footer className="bg-dark text-white text-center p-3">
+    <footer className=" text-white text-center p-3">
       <p>Reach out to me:</p>
       <div className="d-flex justify-content-center mb-3">
         <a href="https://github.com/T0masSousa" target="_blank" rel="noreferrer" className="mx-2">

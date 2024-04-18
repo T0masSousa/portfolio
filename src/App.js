@@ -23,8 +23,8 @@ import Footer from './Components/Footer';
 //FUNÇÃO EXPORTADA
 function App() {
   return (
-    <div className="w-100">
-    <BrowserRouter basename='/'>
+    <div className="w-100 bg-dark">
+    <BrowserRouter basename='/portfolio'>
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Homepage/>}/>
