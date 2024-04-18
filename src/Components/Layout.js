@@ -16,12 +16,12 @@ const Layout = () => {
                 <Link to="/">
                     <Logo className="text-start ms-3 pt-3 pb-4" width="20%" heigth="20%"/>
                 </Link>
-                <div className="ms-auto">
+                <div className="ms-auto d-flex">
                     <Link to="/About">
-                        <p className="text-end text-decoration-none">About</p>
+                        <p className="text-end text-decoration-none mx-2">About</p>
                         </Link>
                     <Link to="/Projects">
-                        <p className="text-end text-decoration-none"> My Projects</p>
+                        <p className="text-end text-decoration-none mx-2"> My Projects</p>
                     </Link>
                 </div>
             </nav>
