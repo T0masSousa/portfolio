@@ -20,7 +20,7 @@ import Layout from './Components/Layout';
 //FUNÇÃO EXPORTADA
 function App() {
   return (
-    <div className="w-100 h-100">
+    <div className="w-100">
     <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout/>}>
