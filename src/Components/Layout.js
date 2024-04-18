@@ -14,14 +14,14 @@ const Layout = () => {
         <div>
             <nav className="shadow navbar bg-success">
                 <Link to="/">
-                    <Logo className="text-start ms-3 pt-3 pb-4" width="30%" heigth="30%"/>
+                    <Logo className="text-start" width="30%" heigth="30%"/>
                 </Link>
                 <Link to="About">
-                    <p className="text-end ms-3 pt-3 pb-4">About</p>
+                    <p className="text-end">About</p>
                     
                 </Link>
                 <Link to="Projects">
-                    <p className="text-ed ms-3 pt-3 pb-4"> My Projects</p>
+                    <p className="text-end"> My Projects</p>
                 </Link>
             </nav>
             <Outlet/>
