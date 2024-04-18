@@ -1,5 +1,14 @@
+//VAI BUSCAR O COTEUDO DO HOMEPAGE E MOSTRA NO SITE
+import HomepageContent from "../Components/HomepageContent"
+
 //FUNÇÃO QUE EXPORTA
 const Homepage = () => {
+
+    return(
+        <div>
+            <HomepageContent/>
+        </div>
+    )
   
 }
 
