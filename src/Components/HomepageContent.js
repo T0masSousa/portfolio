@@ -3,10 +3,10 @@ const HomepageContent = () => {
  
     return(
         <div>
-            <div className="container">
+            <div className="container bg-info">
                 <div className="row">
                     <div className="col-12">
-                        <h1 className="text-center mt-5">Welcome to my Portfolio</h1>
+                        <h1 className="text-center mt-5 fw-bold">Welcome to my Portfolio</h1>
                     </div>
                 </div>
                 <div className="row">
