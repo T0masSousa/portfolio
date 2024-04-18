@@ -16,11 +16,11 @@ const Layout = () => {
                 <Link to="/">
                     <Logo className="text-start ms-3 pt-3 pb-4" width="20%" heigth="20%"/>
                 </Link>
-                <Link to="About">
+                <Link to="/About">
                     <p className="text-end">About</p>
                     
                 </Link>
-                <Link to="Projects">
+                <Link to="/Projects">
                     <p className="text-end"> My Projects</p>
                 </Link>
             </nav>
