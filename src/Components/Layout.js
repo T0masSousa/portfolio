@@ -12,17 +12,18 @@ const Layout = () => {
     return(
 
         <div>
-            <nav className="shadow navbar bg-dark">
+            <nav className="shadow navbar bg-dark align-items-center d-flex">
                 <Link to="/">
                     <Logo className="text-start ms-3 pt-3 pb-4" width="20%" heigth="20%"/>
                 </Link>
-                <Link to="/About">
-                    <p className="text-end">About</p>
-                    
-                </Link>
-                <Link to="/Projects">
-                    <p className="text-end"> My Projects</p>
-                </Link>
+                <div className="ms-auto">
+                    <Link to="/About">
+                        <p className="text-end text-decoration-none">About</p>
+                        </Link>
+                    <Link to="/Projects">
+                        <p className="text-end text-decoration-none"> My Projects</p>
+                    </Link>
+                </div>
             </nav>
             <Outlet/>
         </div>
