@@ -1,8 +1,8 @@
 //FUNÇÃO QUE EXPORTA
-const About = () => {
+const HomepageContent = () => {
   
 }
 
 
 //EXPORT PARA AS OUTRAS PÁGINAS
-export default About;
+export default HomepageContent;

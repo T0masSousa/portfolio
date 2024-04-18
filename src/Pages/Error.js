@@ -1,8 +1,8 @@
 //FUNÇÃO QUE EXPORTA
-const About = () => {
+const Error = () => {
   
 }
 
 
 //EXPORT PARA AS OUTRAS PÁGINAS
-export default About;
+export default Error;
