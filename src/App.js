@@ -1,3 +1,8 @@
+
+//ESTA PÁGINA USA O HASHROUTER, PARA QUE O GITHUB, QUANDO SE DER REFRESH NA PÁGIN ABOUT OU PAGES
+//NÃO PROCURE PELO PÁGINA ESPECÍFCA, PORQUE SºAO CONSTRUÍDAS NO CLIENT SIDE
+//ASSIM ELE VAI IGNORAR TUDO O QUE VEM EM FRENTE AO # E RECONSTRUIR A PÁGINA
+
 //CSS
 import './App.css';
 
@@ -5,7 +10,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //NAVEGAR
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 
 //COMPONENTES QUE VÃO ESTAR NO NAV
 import Homepage from './Pages/Homepage';
@@ -24,7 +29,7 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <div className="w-100 bg-dark">
-    <BrowserRouter basename='/portfolio'>
+    <HashRouter basename='/portfolio'>
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Homepage/>}/>
@@ -34,7 +39,7 @@ function App() {
                 </Route>
             </Routes>
             <Footer/>
-    </BrowserRouter>
+    </HashRouter>
 </div>
   );
 }
