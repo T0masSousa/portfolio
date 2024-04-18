@@ -16,7 +16,7 @@ const Layout = () => {
                 <Link to="/">
                     <Logo className="text-start ms-3 pt-3 pb-4" width="20%" heigth="20%"/>
                 </Link>
-                <div className="ms-auto d-flex">
+                <div className="ms-auto d-flex pe-5">
                     <Link to="/About" className="text-decoration-none text-white">
                         <p className="text-end mx-2">About</p>
                         </Link>
