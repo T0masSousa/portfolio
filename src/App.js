@@ -1,5 +1,4 @@
-
-//CSS
+//CSS File
 import './App.css';
 
 //BOOTSTRAP
@@ -19,7 +18,6 @@ import Layout from './Components/Layout';
 
 //FOOTER
 import Footer from './Components/Footer';
-
 
 //FUNÇÃO EXPORTADA
 function App() {
