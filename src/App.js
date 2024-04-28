@@ -48,6 +48,10 @@ const App = () => {
 
   }, []);
 
+  const particlesLoaded = (container) => {
+    let saveconfig=container;
+  };
+
   useEffect(() => {
     console.log(init);
   }, [init]);
