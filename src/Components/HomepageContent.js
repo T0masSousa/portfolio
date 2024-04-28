@@ -25,9 +25,9 @@ const hostinfo="This portfolio has been fully made by me using ReactJS in additi
                     </div>  
                     <div className="col-md-6 mt-auto mb-auto">
                         <h5 className='text-start  text-white pb-3'>Learn a little more about me:</h5>
-                        <div className='pt-4'>
+                        <div className='pt-2'>
                             <p className='fs-5 text-white'>{info}</p>
-                            <p className='fs-6 text-white'>{hostinfo}</p>
+                            <p className='fs-6 text-white pt-3'>{hostinfo}</p>
                         </div>
                             
                     </div>           
