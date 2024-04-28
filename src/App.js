@@ -66,7 +66,7 @@ const App = () => {
           preset: "stars",
           background:{
             color: {
-              value: "#000000",
+              value: "transparent",
             }
           },
           particles: {
@@ -75,6 +75,10 @@ const App = () => {
             },
             number: {
               value: 160,
+            },
+            size: {
+              value: 2,
+              random: true,
             },
           }
         }}
