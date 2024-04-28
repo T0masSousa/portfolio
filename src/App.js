@@ -49,7 +49,7 @@ const App = () => {
   }, []);
 
   const particlesLoaded = (container) => {
-    let saveconfig=container;
+    const saveconfig = container;
   };
 
   useEffect(() => {
