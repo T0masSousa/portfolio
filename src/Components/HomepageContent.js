@@ -20,14 +20,14 @@ const hostinfo="This portfolio has been fully made be me and is hosted thanks to
                     
                 </div>
                 <div className="row">
+                    <div className="col-md-6 text-center">
+                         <img src={HomepageImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: '450px'}} />
+                    </div>  
                     <div className="col-md-6">
                         <h3>Learn a little more about me:</h3>
                             <p className='fs-3 text-white'>{info}</p>
                             <p className='fs-5 text-white'>{hostinfo}</p>
-                    </div>
-                    <div className="col-md-6">
-                         <img src={HomepageImage} alt="Illustration REpresenting a Web Developer at their job." className="img-fluid" style={{ maxHeight: '450px'}} />
-                    </div>                    
+                    </div>           
                 </div>
             </div>
         </div>

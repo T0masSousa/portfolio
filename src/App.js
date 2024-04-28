@@ -45,6 +45,8 @@ const App = () => {
 
       setInit(true);
 
+      console.log("Particles loaded!aaa")
+
     });
 
   }, []);
@@ -61,6 +63,11 @@ const App = () => {
         particlesLoaded={particlesLoaded}
         options={{
           preset: "stars",
+          particles: {
+            color: {
+              value:"#ffffff"
+            }
+          }
         }}
       />
     ): null}
