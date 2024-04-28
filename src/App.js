@@ -127,7 +127,7 @@ const App = () => {
                 </Route>
               </Routes>
               <Footer/>
-            </HAsh>
+            </HashRouter>
           </div>
         </>
       )}
