@@ -41,11 +41,10 @@ const App = () => {
       
     }).then(() => {
 
-      console.log("Particles loaded!")
-
+  
       setInit(true);
 
-      console.log("Particles loaded!aaa")
+      console.log(init);
 
     });
 
