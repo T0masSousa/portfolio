@@ -15,7 +15,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //NAVEGAR
-import {HashRouter, Routes, Route, HashRouter} from "react-router-dom";
+import {Routes, Route, HashRouter} from "react-router-dom";
 
 //COMPONENTES QUE VÃO ESTAR NO NAVs
 import Homepage from './Pages/Homepage';
