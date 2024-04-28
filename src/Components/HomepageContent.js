@@ -1,6 +1,6 @@
 //IMPORT
 import React from 'react';
-import HomepageImage from '../Imgs/HomepageImage.jpg';
+import HomepageImage from '../Imgs/HomepageImage.png';
 
 //FUNÇÃO QUE EXPORTA
 const HomepageContent = () => {
