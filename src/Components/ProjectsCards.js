@@ -45,9 +45,9 @@ const ProjectsCards = () => {
 
         {projects.map((project, index) => (
 
-          <div className="col-12 mb-4" key={index}>
+          <div className="col-12 mb-5" key={index}>
 
-            <div className="card bg-transparent text-white outlineCards">
+            <div className="card bg-transparent text-white outlineCards px-4">
 
                 <div className='row'>
                     
@@ -61,9 +61,9 @@ const ProjectsCards = () => {
 
                         <div className="card-body">
 
-                            <h5 className="card-title mb-3">{project.title}</h5>
+                            <h5 className="card-title mb-3 colorTitle">{project.title}</h5>
 
-                            <p className="card-text fw-bold">
+                            <p className="card-text fw-italic">
 
                                 {project.languages.map((language, index) => (
 
