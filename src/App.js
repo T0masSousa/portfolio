@@ -2,10 +2,10 @@
 import React from 'react';
 
 //PARTICLES
-import { useEffect,useCallback } from 'react';
-import { Main, loadSlim, loadPreset } from 'tsparticles';
-import Particles from 'react-particles';
-import { loadFull } from "tsparticles";
+import { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadStarsPreset } from "@tsparticles/react;"
+
 
 //CSS File
 import './App.css';
@@ -32,45 +32,43 @@ import Footer from './Components/Footer';
 //FUNÇÃO EXPORTADA
 const App = () => {
 
-  //FUNÇÃO QUE INICIA AS PARTICULAS
-  const particlesInit = useCallback(async engine => {
+  const [init, setInit] = useState(false);
 
-    //CARREGAR AS PARTICULAS
-    console.log(engine);
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      
+      await loadStarsPreset(engine);
+      
+    }).then(() => {
 
-    //CARREGAR AS PARTICULAS
-    await loadSlim(engine);
+      setInit(true);
 
-    //PRESET
-    await loadPreset(engine,"stars");
+    });
 
   }, []);
 
-  //FUNÇÃO QUE CARREGA AS PARTICULAS
-  const particlesLoaded = useCallback(async container => {
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
 
-    //CARREGAR AS PARTICULAS
-    await console.log(container);
-
-
-}, []);
-
+  //ESCOLHE A PRESET
+  tsParticles.load({
+    id: "tsparticles",
+    options: {
+      preset: "stars",
+    },
+  });
+ 
   return (
-    <div style={{ position: 'relative' }}>
+    <div>
+       {init ? (
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={options}
+      />
+    ): null}
       <div className="w-100 bg-dark">
-        <Particles id="tsparticles" options={{
-            preset: 'stars',
-          }} 
-          url="http://foo.bar/particles.json" 
-          init={particlesInit} 
-          loaded={particlesLoaded}   
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-        }} />
         <BrowserRouter basename='/portfolio'>
           <Routes>
             <Route path="/" element={<Layout/>}>
