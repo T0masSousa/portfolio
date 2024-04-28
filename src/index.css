@@ -13,7 +13,7 @@ body {
 
 }
 
-.colorTitle {
-  color: #0a58ca;
+.card-title.colorTitle {
+  color: #0a58ca !important;
 }
 
