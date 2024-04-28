@@ -18,13 +18,13 @@ const Footer = () => {
         <div className="col-md-4">
           <div>
             <a href="https://github.com/T0masSousa" target="_blank" rel="noreferrer">
-              <FaGithub className="fs-3 py-3" />
+              <FaGithub className="fs-3 px-2" />
             </a>
             <a href="https://www.linkedin.com/in/tomás-sousa-a96507179/" target="_blank" rel="noreferrer">
-              <FaLinkedinIn className="fs-3 py-3" />
+              <FaLinkedinIn className="fs-3 px-2" />
             </a>
             <a href="https://www.instagram.com/tomas.rafael.sousa/" target="_blank" rel="noreferrer">
-              <FaInstagram className="fs-3 py-3" />
+              <FaInstagram className="fs-3 px-2" />
             </a>
           </div>
         </div>
