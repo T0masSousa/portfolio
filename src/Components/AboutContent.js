@@ -22,8 +22,8 @@ const AboutContent = () => {
                             <p className='fs-5 text-white'><n className='coloredText'>"If you do what you love, you'll never work a day in your life." - <n style={{fontStyle:'italic', opacity:'75%'}}>Marc Anthony</n></n></p>
                         </div>
                     </div>
-                    <div className="col-md-6 text-center">
-                         <img src={AboutMeImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: '450px'}} />
+                    <div className="col-md-6 d-flex align-items-center text-center">
+                         <img src={AboutMeImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" />
                     </div>
                 </div>           
                 </div>
