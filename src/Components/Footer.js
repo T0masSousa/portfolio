@@ -16,15 +16,15 @@ const Footer = () => {
           <p>Hosted by GitHub Pages</p>
         </div>
         <div className="col-md-4">
-          <div className="d-flex justify-content-around">
+          <div>
             <a href="https://github.com/T0masSousa" target="_blank" rel="noreferrer">
-              <FaGithub className="fs-2" />
+              <FaGithub className="fs-3 py-3" />
             </a>
             <a href="https://www.linkedin.com/in/tomás-sousa-a96507179/" target="_blank" rel="noreferrer">
-              <FaLinkedinIn className="fs-2" />
+              <FaLinkedinIn className="fs-3 py-3" />
             </a>
             <a href="https://www.instagram.com/tomas.rafael.sousa/" target="_blank" rel="noreferrer">
-              <FaInstagram className="fs-2" />
+              <FaInstagram className="fs-3 py-3" />
             </a>
           </div>
         </div>
