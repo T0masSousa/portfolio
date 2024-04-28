@@ -9,25 +9,25 @@ const ProjectsCards = () => {
     {
       title: 'Chronos',
       image: require('../Imgs/Projects/Chronos.png'),
-      description:"In this project, me and 3 other class mates were challenged to make an imersive experience combining our recently acquired Javascript knowledge and also one of RTP's shows called UAU. We,as a group, decided we would create an application that would show the start of Human Evolution all since the Big Bang until the current days showing strategic moments in our history.",
+      description: "In collaboration with three classmates, we created an immersive application that illustrates key moments in human evolution from the Big Bang to the present day. This project was a challenge to apply our newly acquired JavaScript skills and was inspired by RTP's show, UAU. We utilized libraries such as particles.js for dynamic backgrounds and animate on scroll.js for engaging scrolling effects.",    
       languages: ['JavaScript', 'HTML', 'CSS'],
     },
     {
         title: 'Top Indian Movies',
         image: require('../Imgs/Projects/Top_Indian_Movies.png'),
-        description:'This project was one of my favorite ones to make. I worked alone on this one. The objective was to create a website that was capable of listing Indian Movies from a provided database. Then, that listing could be changed according to some filter applied like gender, year or even name. In addition to that it also required to have a register and login mecanism that would make of use of features like password hashing to prevent attacks. I loved to make this project because I was able to introduce features like, for example, a feedback mecanism that would let the user know when he added or deleted a favorite. Besides that, I really loved being able to make this work while making it as secure as possible preventing SQL Injections or eventual loopholes that could lead to database damages. Finally, I really understood how can we make use of strategies like dividing our code into static files and dinamic files, that change according to some type of user action',
+        description: "In this solo project, I developed a secure website for listing and filtering Indian movies from a provided database. The site features user registration and login mechanisms with password hashing for security. I implemented a feedback system to notify users of their actions, such as adding or deleting a favorite. I took measures to prevent SQL Injections and other potential security risks. This project enhanced my understanding of code organization, particularly the division between static and dynamic files.",
         languages: ['PHP', 'SQL', 'JavaScript', 'HTML', 'CSS'],
     },
     {
         title: 'The Evolution Of Life',
         image: require('../Imgs/Projects/The_Evolution_Of_Life.png'),
-        description:"This project was born on a CBL (Challenge Based Learning) context and we had a deal with an exterior entity, Planetário do Porto. We were challenged to create something that their visitors could use to entertain themselves while waiting for a session in their dome. My team decided we would try to make a little game, and so we did. We made a game were the user would have to progress trough and  the conditions of each planet for it«s atmosphere to support life by combining elements. He'd have access to a Lab were he could combine or deconstruct elements, he would see the planet he was currently in along side the dirt plots and what would be stored in them and also a small market where he could trade items with other players. Here, each player would set their own price or item he'd want in return. As it is obvious by know he also had a register and login system that was completed with availability for avatar choosing. Finally, we made a back-office as well. There, the admin would be able to get some statistics on important information regarding the game and it's player and they would also have direct access to the database's entities to be able to erase, update or add data to them. Of course that here he made sure that and admin could only edit specific tables without endangering the functioning of the app itself.",
+        description: "In a Challenge Based Learning context, my team partnered with Planetário do Porto to create an interactive game for visitors. The game, designed to entertain visitors while they wait for their session, involves progressing through different planets and altering their atmospheres to support life. Features include a lab for element combination and deconstruction, a marketplace for item trading, and a user registration and login system with avatar selection. We also developed a back-office for admins to access game statistics, manage database entities, and ensure the app's functionality.",
         languages: ['PHP', 'SQL', 'JavaScript', 'HTML', 'CSS'],
     },
     {
         title: 'Musix',
         image: require('../Imgs/Projects/Musix.png'),
-        description: "This is my most recent big project. Here I had just learnt about React and the way we can use it and how it works. My professor told my class that we could make whatever we wanted as long as it showed use of at least 2 APIs with React. With this, I decided to join two of my passions, those being coding and listening to music. I had the ideia to make a WEB App, where users can search for a song using it's name or name joined by artist's name. After the input, the app will react out to Spotify's WEB API and will retrieve that song so that the user can listen to it. It will have by know stored that data. In case the user selected to option to get the lyrics for the song he just searched for, the app, would use it's own CORS Server and make a request to Genius API, retrieve the link to the song lyrics. In addition, if the user wanted the song's videoclip, th app would use the Spotify fetched data to make a requeste to Youtube Data API. Then the app would filter these results and show an iframe containing the video from the results that had the most views and that could be played within the website. Finally, I added Google Firestore's service to support user logins via email and password or even Google Sign In or Google Sign Up methods. Firestore allowed me to create a relational logic for my data storage. This means that, when a user selected he would like to add a favorite song, the app would go get his id, knowing that this is only possible after a login, and it would save the song's details alongide his ids. This information would then be displayed dinamically on is favorites page from which he could also remove favorites. Finally this app, also had a feedback mecanism that would accompany the user letting him know when a favorite was saved, or removed, when he missed a login or was already registered or even when the API request encountered an error. ",
+        description: "In this recent project, I leveraged my newly acquired React skills to create a web app that combines my passions for coding and music. Users can search for songs by name or artist, and the app fetches song data from Spotify's Web API. If users opt for lyrics, the app uses a CORS server to request data from the Genius API. For videoclips, it uses the Spotify data to request from the YouTube Data API and displays the most viewed playable video. I integrated Google Firestore for user authentication and data storage, enabling users to add and remove favorite songs. The app also provides feedback on user actions such as saving or removing favorites, login errors, and API request errors.",
         languages: ['React', 'CSS'],
     },
   ];
@@ -43,13 +43,13 @@ const ProjectsCards = () => {
 
           <div className="col-12 mb-4" key={index}>
 
-            <div className="card">
+            <div className="card bg-transparent text-white outlineCards">
 
                 <div className='row'>
                     
-                    <div className='col-md-4'>
+                    <div className='col-md-4 d-flex align-items-center'>
                         
-                        <img src={project.image} className="card-img-top" alt={project.title} />
+                        <img src={project.image} className="card-img-top mx-auto" alt={project.title} />
                     
                     </div>
 
