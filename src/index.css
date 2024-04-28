@@ -17,6 +17,11 @@ body {
   color: #0a58ca !important;
 }
 
+.coloredText{
+
+  color: #0a58ca;
+}
+
 
 .card:hover {
   transform: scale(1.05);

@@ -9,6 +9,7 @@ import { loadSlim } from "@tsparticles/slim";
 
 //CSS File
 import './App.css';
+import './index.css';
 
 //BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,16 +32,35 @@ import Footer from './Components/Footer';
 //FUNÇÃO EXPORTADA
 const App = () => {
 
+  //PARTICLES
+  const [loading, setLoading] = useState(true);
+
+  //PARA DAR EFFEITO DE LOAD
+  useEffect(() => {
+
+    //PASSADOS 3 SEGUNDOS, O LOADING DESAPARECE
+    const timer = setTimeout(() => setLoading(false), 3000);
+    
+    //RETIRAR O TIMER
+    return () => clearTimeout(timer);
+
+  }, []);
+
+  //PARA INICIAR O PARTICLES
   const [init, setInit] = useState(false);
 
+  //PARA INICIAR O PARTICLES
   useEffect(() => {
+
+    //INICIAR O PARTICLES
     initParticlesEngine(async (engine) => {
       
+      //CARREGAR O PARTICLES
       await loadSlim(engine);
       
     }).then(() => {
 
-  
+      //INICIAR O PARTICLES
       setInit(true);
 
     });
@@ -90,7 +110,9 @@ const App = () => {
           }
         }}
       />
-    ): null}
+    ): (
+      <p className='coloredText'>Loading...</p>
+    )}
       <div className="w-100 bg-dark">
         <BrowserRouter basename='/portfolio'>
           <Routes>
