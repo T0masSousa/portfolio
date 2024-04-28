@@ -15,7 +15,7 @@ const hostinfo="This portfolio has been fully made be me and is hosted thanks to
             <div className="container">
                 <div className='row'>
                     <div className="col-md-6">
-                        <h2 className='text-start col-md-6'>Hi! My name is Tomás Sousa</h2>
+                        <h2 className='text-start col-md-6 text-white'>Hi! My name is <n className="fw-bolder">Tomás Sousa</n></h2>
                     </div>
                     <div className="col-md-6">
                          <img src={HomepageImage} alt="Illustration REpresenting a Web Developer at their job." className="img-fluid" style={{ maxHeight: '450px'}} />
@@ -24,8 +24,8 @@ const hostinfo="This portfolio has been fully made be me and is hosted thanks to
                 <div className="row">
                     <div className="col-md-8">
                         <h3>Learn a little more about me:</h3>
-                            <p className='fs-3'>{info}</p>
-                            <p className='fs-5'>{hostinfo}</p>
+                            <p className='fs-3 text-white'>{info}</p>
+                            <p className='fs-5 text-white'>{hostinfo}</p>
                     </div>                    
                 </div>
             </div>
