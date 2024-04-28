@@ -28,7 +28,7 @@ const Footer = () => {
               <FaInstagram className="fs-2 px-2" />
             </a>
             <a href="mailto:tomas.003.sousa.13@gmail.com" target="_blank" rel="noreferrer">
-              <HiOutlineMail className="fs-2 px-2" /> 
+              <HiOutlineMail className="fs-1 px-2" /> 
             </a>
           </div>
         </div>
