@@ -24,7 +24,7 @@ const hostinfo="This portfolio has been fully made by me using ReactJS in additi
                 </div>
                 <div className="row pb-5 mb-5">
                     <div className="col-md-6 text-center">
-                         <img src={HomepageImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: '450px'}} />
+                         <img src={HomepageImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: window.innerWidth <= 768 ? '300px' : '450px'}} />
                     </div>  
                     <div className="col-md-6 mt-auto mb-auto">
                         <h5 className='text-start  text-white pb-3'>Learn a little more about me:</h5>

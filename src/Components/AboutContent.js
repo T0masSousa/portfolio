@@ -23,7 +23,7 @@ const AboutContent = () => {
                         </div>
                     </div>
                     <div className="col-md-6 d-flex align-items-center text-center">
-                         <img src={AboutMeImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: '450px'}}/>
+                         <img src={AboutMeImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: window.innerWidth <= 768 ? '300px' : '450px'}}/>
                     </div>
                 </div>           
                 </div>
