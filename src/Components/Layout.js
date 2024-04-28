@@ -13,7 +13,7 @@ const Layout = () => {
 
         <div>
             <nav className="navbar align-items-center d-flex">
-                <Link to="/" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'  }}>
+                <Link to="/">
                     <Logo className="text-start ms-3 pt-3 pb-4" width="20%" heigth="20%"/>
                 </Link>
                 <div className="ms-auto d-flex pe-5">
