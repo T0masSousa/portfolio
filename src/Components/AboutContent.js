@@ -1,3 +1,5 @@
+import AboutMeImage from '../Imgs/AboutMe.png';
+
 
 //FUNÇÃO QUE EXPORTA
 const AboutContent = () => {
@@ -9,7 +11,6 @@ const AboutContent = () => {
                     <div className="col-md-12 pt-5 pb-4">
                         <h4 className='text-star text-white'>Get to Know <n style={{ color: '#0a58ca'}} className="fw-bolder">Me</n></h4>
                     </div>
-                    
                 </div>
                 <div className="row pb-5 mb-5">  
                     <div className="col-md-6 mt-auto mb-auto">
@@ -25,7 +26,7 @@ const AboutContent = () => {
                     </div>
                 </div>
                     <div className="col-md-6 text-center">
-                         <img src={HomepageImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: '450px'}} />
+                         <img src={AboutMeImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: '450px'}} />
                     </div>           
                 </div>
             </div>
