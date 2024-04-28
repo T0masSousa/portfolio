@@ -1,6 +1,6 @@
 
 //ÍCONES DAS REDES SOCIAIS
-import { FaGithub, FaLinkedinIn, FaInstagram} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaInstagram, HiOutlineMail } from "react-icons/fa";
 
 //FUNÇAO A EXPORTAR
 const Footer = () => {
@@ -25,6 +25,9 @@ const Footer = () => {
             </a>
             <a href="https://www.instagram.com/tomas.rafael.sousa/" target="_blank" rel="noreferrer">
               <FaInstagram className="fs-2 px-2" />
+            </a>
+            <a href="mailto:tomas.003.sousa.13@gmail.com" target="_blank" rel="noreferrer">
+              <HiOutlineMail className="fs-2 px-2" /> 
             </a>
           </div>
         </div>

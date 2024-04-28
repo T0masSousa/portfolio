@@ -77,56 +77,59 @@ const App = () => {
  
   return (
     <div>
-       {init ? (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={{
-          preset: "stars",
-          background:{
-            color: {
-              value: "transparent",
-            }
-          },
-          particles: {
-            color: {
-              value:"#ffffff"
-            },
-            number: {
-              value: 100,
-            },
-            size: {
-              value: 1,
-              random: true,
-            },
-            move: {
-              enable: true,
-              speed: 1,
-              direction: "random",
-              random: false,
-              straight: false,
-              out_mode: "out",
-            },
-          }
-        }}
-      />
-    ): (
-      <p className='coloredText'>Loading...</p>
-    )}
-      <div className="w-100 bg-dark">
-        <BrowserRouter basename='/portfolio'>
-          <Routes>
-            <Route path="/" element={<Layout/>}>
-                <Route index element={<Homepage/>}/>
-                <Route path="About" element={<About/>}/>
-                <Route path="Projects" element={<Projects/>}/>
-            </Route>
-          </Routes>
-          <Footer/>
-        </BrowserRouter>
+      {loading ? (
+        <h4 className='coloredText'>Loading...</h4>
+      ) : (
+        <>
+          {init ? (
+            <Particles
+              id="tsparticles"
+              particlesLoaded={particlesLoaded}
+              options={{
+                preset: "stars",
+                background:{
+                  color: {
+                    value: "transparent",
+                  }
+                },
+                particles: {
+                  color: {
+                    value:"#ffffff"
+                  },
+                  number: {
+                    value: 100,
+                  },
+                  size: {
+                    value: 1,
+                    random: true,
+                  },
+                  move: {
+                    enable: true,
+                    speed: 1,
+                    direction: "random",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                  },
+                }
+              }}
+            />
+          ) : null}
+          <div className="w-100 bg-dark">
+            <BrowserRouter basename='/portfolio'>
+              <Routes>
+                <Route path="/" element={<Layout/>}>
+                    <Route index element={<Homepage/>}/>
+                    <Route path="About" element={<About/>}/>
+                    <Route path="Projects" element={<Projects/>}/>
+                </Route>
+              </Routes>
+              <Footer/>
+            </BrowserRouter>
+          </div>
+        </>
+      )}
     </div>
-  </div>
-  
   );
 }
 
