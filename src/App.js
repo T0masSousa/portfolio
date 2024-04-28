@@ -50,14 +50,6 @@ const App = () => {
   const particlesLoaded = (container) => {
     console.log(container);
   };
-
-  //ESCOLHE A PRESET
-  tsParticles.load({
-    id: "tsparticles",
-    options: {
-      preset: "stars",
-    },
-  });
  
   return (
     <div>
@@ -65,7 +57,9 @@ const App = () => {
       <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
-        options={options}
+        options={{
+          preset: "stars",
+        }}
       />
     ): null}
       <div className="w-100 bg-dark">
