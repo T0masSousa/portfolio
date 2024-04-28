@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.09f1416c.css",
-    "main.js": "/portfolio/static/js/main.5fbaf066.js",
+    "main.js": "/portfolio/static/js/main.d52f43b0.js",
     "static/js/1927.c316a944.chunk.js": "/portfolio/static/js/1927.c316a944.chunk.js",
     "static/js/7590.99fa2421.chunk.js": "/portfolio/static/js/7590.99fa2421.chunk.js",
     "static/js/6725.652bd60c.chunk.js": "/portfolio/static/js/6725.652bd60c.chunk.js",
@@ -71,11 +71,15 @@
     "static/js/4265.2024900b.chunk.js": "/portfolio/static/js/4265.2024900b.chunk.js",
     "static/js/4494.796ff03f.chunk.js": "/portfolio/static/js/4494.796ff03f.chunk.js",
     "static/js/4290.136d0558.chunk.js": "/portfolio/static/js/4290.136d0558.chunk.js",
+    "static/media/Top_Indian_Movies.png": "/portfolio/static/media/Top_Indian_Movies.d296183b50f97ecc1cda.png",
     "static/media/HomepageImage2.png": "/portfolio/static/media/HomepageImage2.fdd90bb8b441581e11c5.png",
+    "static/media/The_Evolution_Of_Life.png": "/portfolio/static/media/The_Evolution_Of_Life.50342a534ebbd179d14b.png",
+    "static/media/Musix.png": "/portfolio/static/media/Musix.66cb57889cdd7a9a2e3d.png",
+    "static/media/Chronos.png": "/portfolio/static/media/Chronos.a3da28a7a8c4ae61b3ed.png",
     "static/media/LOGO.svg": "/portfolio/static/media/LOGO.74a7c91b696dada8c170ec2da77886e4.svg",
     "index.html": "/portfolio/index.html",
     "main.09f1416c.css.map": "/portfolio/static/css/main.09f1416c.css.map",
-    "main.5fbaf066.js.map": "/portfolio/static/js/main.5fbaf066.js.map",
+    "main.d52f43b0.js.map": "/portfolio/static/js/main.d52f43b0.js.map",
     "1927.c316a944.chunk.js.map": "/portfolio/static/js/1927.c316a944.chunk.js.map",
     "7590.99fa2421.chunk.js.map": "/portfolio/static/js/7590.99fa2421.chunk.js.map",
     "6725.652bd60c.chunk.js.map": "/portfolio/static/js/6725.652bd60c.chunk.js.map",
@@ -148,6 +152,6 @@
   },
   "entrypoints": [
     "static/css/main.09f1416c.css",
-    "static/js/main.5fbaf066.js"
+    "static/js/main.d52f43b0.js"
   ]
 }
