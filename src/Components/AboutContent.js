@@ -14,7 +14,6 @@ const AboutContent = () => {
                 </div>
                 <div className="row pb-5 mb-5">  
                     <div className="col-md-6 mt-auto mb-auto">
-                        <h5 className='text-start  text-white pb-3'>Hello there</h5>
                         <div className='pt-2'>
                             <p className='fs-5 text-white'>I'm <n className='coloredText'>Tomás Sousa</n>, a final year student of Multimedia and Communication Technologies at the University of Aveiro. I switched from Humanistic Sciences to this course and found <n className='coloredText'>my passion in web development</n>.</p>
                             <p className='fs-5 text-white'>I enjoy the <n className='coloredText'>problem-solving aspect of coding</n>, especially troubleshooting errors. However, web designing isn't my cup of tea; I prefer dealing with code errors.</p>

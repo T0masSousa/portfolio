@@ -1,6 +1,7 @@
 
 //ÍCONES DAS REDES SOCIAIS
-import { FaGithub, FaLinkedinIn, FaInstagram, HiOutlineMail } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 //FUNÇAO A EXPORTAR
 const Footer = () => {
