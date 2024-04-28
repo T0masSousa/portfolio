@@ -74,11 +74,18 @@ const App = () => {
               value:"#ffffff"
             },
             number: {
-              value: 160,
+              value: 100,
             },
             size: {
               value: 2,
               random: true,
+            },
+            move: {
+              enable: true,
+              speed: 2,
+              random: false,
+              straight: false,
+              out_mode: "out",
             },
           }
         }}
