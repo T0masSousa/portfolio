@@ -78,7 +78,9 @@ const App = () => {
   return (
     <div>
       {loading ? (
+        <div className="d-flex justify-content-center align-items-center vh-100 bg-dark">
         <h4 className='coloredText'>Loading...</h4>
+      </div>
       ) : (
         <>
           {init ? (
