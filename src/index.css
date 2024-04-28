@@ -9,7 +9,7 @@ body {
 
 .outlineCards {
 
-  border: 2px solid #0a58ca;
+  border: 2px solid #0a58ca !important;
 
 }
 
