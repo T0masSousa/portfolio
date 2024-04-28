@@ -64,7 +64,7 @@ const ProjectsCards = () => {
 
                             <h5 className="card-title mb-3 colorTitle">{project.title}</h5>
 
-                            <p className="card-text fw-italic">
+                            <p className="card-text font-italic">
 
                                 {project.languages.map((language, index) => (
 
