@@ -64,10 +64,18 @@ const App = () => {
         particlesLoaded={particlesLoaded}
         options={{
           preset: "stars",
+          background:{
+            color: {
+              value: "#000000",
+            }
+          },
           particles: {
             color: {
               value:"#ffffff"
-            }
+            },
+            number: {
+              value: 160,
+            },
           }
         }}
       />
