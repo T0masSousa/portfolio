@@ -44,8 +44,6 @@ const App = () => {
   
       setInit(true);
 
-      console.log(init);
-
     });
 
   }, []);
@@ -53,6 +51,10 @@ const App = () => {
   const particlesLoaded = (container) => {
     console.log(container);
   };
+
+  useEffect(() => {
+    console.log(init);
+  }, [init]);
  
   return (
     <div>
