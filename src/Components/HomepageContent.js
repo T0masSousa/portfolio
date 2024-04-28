@@ -2,6 +2,9 @@
 import React from 'react';
 import HomepageImage from '../Imgs/HomepageImage2.png';
 
+//CSS
+import "../index.css";
+
 //FUNÇÃO QUE EXPORTA
 const HomepageContent = () => {
 
@@ -15,7 +18,7 @@ const hostinfo="This portfolio has been fully made by me using ReactJS in additi
             <div className="container">
                 <div className='row'>
                     <div className="col-md-12 pt-5 pb-4">
-                        <h4 className='text-end text-white'>Hi! My name is <n style={{ color: '#0a58ca'}} className="fw-bolder">Tomás Sousa</n></h4>
+                        <h4 className='text-end text-white'>Hi! My name is <n className="fw-bolder coloredText">Tomás Sousa</n></h4>
                     </div>
                     
                 </div>

@@ -1,6 +1,11 @@
+//IMPORTA O COMPONENTE DOS PROJETOS
+import AboutContent from "../Components/AboutContent";
+
+import React from "react";
+
 //FUNÇÃO QUE EXPORTA
 const About = () => {
-  
+  return <AboutContent />
 }
 
 
