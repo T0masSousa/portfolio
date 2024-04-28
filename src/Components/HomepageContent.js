@@ -7,7 +7,7 @@ const HomepageContent = () => {
 
     //VAR QE VAI ESCREVER O PARARAFO DA INFORMACAO
 const info ="I welcome you to my Portfolio. I am a Full Stack Developer and I am currently studying at the University of Aveiro. In this portfolio, I'll show you some of my projects, where I will identify the languages I have used and you will get to know me a little bit better.";
-const hostinfo="This portfolio has been fully made be me using ReactJS and is hosted thanks to Github's Github Pages Service."
+const hostinfo="This portfolio has been fully made be me using ReactJS in addition to some free usage libraries."
 
  
     return(
