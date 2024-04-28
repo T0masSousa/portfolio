@@ -4,7 +4,7 @@ import React from 'react';
 //PARTICLES
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadStarsPreset } from "@tsparticles/react;"
+import { loadStarsPreset } from "@tsparticles/react";
 
 
 //CSS File
