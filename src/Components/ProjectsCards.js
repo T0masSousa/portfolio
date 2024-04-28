@@ -1,6 +1,9 @@
 //IMPORT
 import React from 'react';
 
+//CSS
+import '../index.css';
+
 //FUNçÃO A EXPORTAR
 const ProjectsCards = () => {
 
@@ -33,9 +36,10 @@ const ProjectsCards = () => {
   ];
 
   return (
+
     <div className="container">
 
-      <h1 className="text-center my-5">Here are all of my projects</h1>
+      <h1 className="text-center my-5 text-white">Here are all of my projects</h1>
 
       <div className="row">
 
