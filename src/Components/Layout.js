@@ -13,7 +13,7 @@ const Layout = () => {
 
         <div>
             <nav className="shadow navbar align-items-center d-flex">
-                <Link to="/">
+                <Link to="/" style={{ display: 'inline-flex' }}>
                     <Logo className="text-start ms-3 pt-3 pb-4" width="20%" heigth="20%"/>
                 </Link>
                 <div className="ms-auto d-flex pe-5">

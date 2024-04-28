@@ -18,7 +18,7 @@ const hostinfo="This portfolio has been fully made be me and is hosted thanks to
                         <h2 className='text-start col-md-6'>Hi! My name is Tomás Sousa</h2>
                     </div>
                     <div className="col-md-6">
-                         <img src={HomepageImage} alt="Your description" className="img-fluid" />
+                         <img src={HomepageImage} alt="Illustration REpresenting a Web Developer at their job." className="img-fluid" style={{ maxHeight: '450px'}} />
                     </div>
                 </div>
                 <div className="row">

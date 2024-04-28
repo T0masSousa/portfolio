@@ -41,6 +41,8 @@ const App = () => {
       
     }).then(() => {
 
+      console.log("Particles loaded!")
+
       setInit(true);
 
     });
