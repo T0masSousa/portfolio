@@ -77,12 +77,12 @@ const App = () => {
               value: 100,
             },
             size: {
-              value: 2,
+              value: 1,
               random: true,
             },
             move: {
               enable: true,
-              speed: 4,
+              speed: 3,
               direction: "random",
               random: false,
               straight: false,
