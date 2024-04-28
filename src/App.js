@@ -15,7 +15,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //NAVEGAR
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route, HashRouter} from "react-router-dom";
 
 //COMPONENTES QUE VÃO ESTAR NO NAVs
 import Homepage from './Pages/Homepage';
@@ -118,7 +118,7 @@ const App = () => {
             />
           ) : null}
           <div className="w-100 bg-dark">
-            <BrowserRouter basename='/portfolio'>
+            <HashRouter basename='/'>
               <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Homepage/>}/>
@@ -127,7 +127,7 @@ const App = () => {
                 </Route>
               </Routes>
               <Footer/>
-            </BrowserRouter>
+            </HAsh>
           </div>
         </>
       )}
