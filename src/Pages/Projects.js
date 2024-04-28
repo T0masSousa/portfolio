@@ -1,6 +1,11 @@
+//IMPORTA O COMPONENTE DOS PROJETOS
+import ProjectsCards from "../Components/ProjectsCards";
+
+import React from "react";
+
 //FUNÇÃO QUE EXPORTA
 const Projects = () => {
-  
+  return <ProjectsCards />
 }
 
 
