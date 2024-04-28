@@ -19,10 +19,10 @@ const Layout = () => {
                     </Link>
                     <div className="ms-auto d-flex pe-5">
                         <Link to="/About" className="text-decoration-none text-white">
-                            <p className="text-end mx-2">About Me</p>
+                            <p className="text-end mx-2">About</p>
                         </Link>
                         <Link to="/Projects" className="text-decoration-none text-white">
-                            <p className="text-end mx-2"> My Projects</p>
+                            <p className="text-end mx-2">Projects</p>
                         </Link>
                     </div>
                 </div>
