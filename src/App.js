@@ -82,7 +82,8 @@ const App = () => {
             },
             move: {
               enable: true,
-              speed: 2,
+              speed: 4,
+              direction: "random",
               random: false,
               straight: false,
               out_mode: "out",
