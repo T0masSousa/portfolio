@@ -84,7 +84,7 @@ const App = () => {
       ) : (
         <>
           {init ? (
-            <Particles
+            <Particles className='vh-100'
               id="tsparticles"
               particlesLoaded={particlesLoaded}
               options={{
