@@ -2,7 +2,7 @@
 import React from 'react';
 
 //PARTICLES
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -31,15 +31,6 @@ import Footer from './Components/Footer';
 
 //FUNÇÃO EXPORTADA
 const App = () => {
-
-  const containerRef = useRef();
-
-  useEffect(() => {
-    if (!loading && init) {
-      const contentHeight = document.querySelector('#main-content').offsetHeight;
-      containerRef.current.style.height = `${contentHeight}px`;
-    }
-  }, [loading, init]);
 
   //PARTICLES
   const [loading, setLoading] = useState(true);
@@ -78,69 +69,71 @@ const App = () => {
 
   const particlesLoaded = (container) => {
     const saveconfig = container;
-
-    console.log(saveconfig);
   };
+
+  useEffect(() => {
+    console.log(init);
+  }, [init]);
  
   return (
     <div>
       {loading ? (
         <div className="d-flex justify-content-center align-items-center vh-100 bg-dark">
         <h2 className='coloredText'>Loading...</h2>
-        </div>
+      </div>
       ) : (
-        <div className="w-100 bg-dark">
+        <>
           {init ? (
-              <Particles
-                id="tsparticles"
-                particlesLoaded={particlesLoaded}
-                options={{
-                  fullScreen: {
-                    enable:false,
-                    zIndex: 0,
-                  },
-                  preset: "stars",
-                  background:{
-                    color: {
-                      value: "transparent",
-                    }
-                  },
-                  particles: {
-                    color: {
-                      value:"#ffffff"
-                    },
-                    number: {
-                      value: 100,
-                    },
-                    size: {
-                      value: 1,
-                      random: true,
-                    },
-                    move: {
-                      enable: true,
-                      speed: 1,
-                      direction: "random",
-                      random: false,
-                      straight: false,
-                        out_mode: "out",
-                    },
+            <Particles
+              id="tsparticles"
+              particlesLoaded={particlesLoaded}
+              options={{
+                fullScreen: {
+                  enable:false,
+                  zIndex:0
+                },
+                preset: "stars",
+                background:{
+                  color: {
+                    value: "transparent",
                   }
-                }}
-              />
+                },
+                particles: {
+                  color: {
+                    value:"#ffffff"
+                  },
+                  number: {
+                    value: 100,
+                  },
+                  size: {
+                    value: 1,
+                    random: true,
+                  },
+                  move: {
+                    enable: true,
+                    speed: 1,
+                    direction: "random",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                  },
+                }
+              }}
+            />
           ) : null}
-            <div id="main-content">
-              <HashRouter basename='/'>
-                <Routes>
-                  <Route path="/" element={<Layout/>}>
+          <div className="w-100 bg-dark">
+            <HashRouter basename='/'>
+              <Routes>
+                <Route path="/" element={<Layout/>}>
                     <Route index element={<Homepage/>}/>
                     <Route path="About" element={<About/>}/>
                     <Route path="Projects" element={<Projects/>}/>
-                  </Route>
-                </Routes>
-                <Footer/>
-              </HashRouter>
+                </Route>
+              </Routes>
+              <Footer/>
+            </HashRouter>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

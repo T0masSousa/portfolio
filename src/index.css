@@ -7,15 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#tsparticles {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 0;
-}
-
 .card.outlineCards {
 
   border: 3px solid #0a58ca !important;
