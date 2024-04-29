@@ -35,7 +35,7 @@ const App = () => {
   const containerRef = useRef();
 
   useEffect(() => {
-    const contentHeight = document.querySelector('.bg-dark').offsetHeight;
+    const contentHeight = document.querySelector('#main-content').offsetHeight;
     containerRef.current.style.height = `${contentHeight}px`;
   });
 
@@ -126,17 +126,19 @@ const App = () => {
                 }}
               />
           ) : null}
-            <HashRouter basename='/'>
-              <Routes>
-                <Route path="/" element={<Layout/>}>
+            <div id="main-content">
+              <HashRouter basename='/'>
+                <Routes>
+                  <Route path="/" element={<Layout/>}>
                     <Route index element={<Homepage/>}/>
                     <Route path="About" element={<About/>}/>
                     <Route path="Projects" element={<Projects/>}/>
-                </Route>
-              </Routes>
-              <Footer/>
-            </HashRouter>
+                  </Route>
+                </Routes>
+                <Footer/>
+              </HashRouter>
           </div>
+        </div>
       )}
     </div>
   );
