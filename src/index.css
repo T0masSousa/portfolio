@@ -27,6 +27,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+/*LINHA AZUL CRIADA EM BAIXO DO ELEMENTO COM A CLASSE*/
 .link-hover::after {
   content: '';
   display: block;
@@ -38,30 +39,32 @@ body {
   bottom: 15px;
 }
 
+/*REVELAR A LINHA AZUL QUANDO DÁ HOVER NO ELEMENTO DA CLASSE*/
 .link-hover:hover::after,
 .link-hover.active::after {
   width: 100%;
 }
 
+/*DEFAULT SIZE DA FONTE*/
 .icon-link {
-  font-size: 3rem; /* Default size for extra small devices */
+  font-size: 3.5rem; /* Extra small devices */
 }
 
-@media (min-width: 576px) { /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { /* Small devices*/
   .icon-link {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
-@media (min-width: 768px) { /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { /* Medium devices*/
   .icon-link {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 
-@media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { /* Large devices*/
   .icon-link {
-    font-size: 4.5rem;
+    font-size: 2rem;
   }
 }
 

@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="col-md-4">
           <div>
             <a href="https://github.com/T0masSousa" target="_blank" rel="noreferrer">
-              <FaGithub className="fs-1 fs-md-2 px-2" />
+              <FaGithub className="icon-link fs-md-2 px-2" />
             </a>
             <a href="https://www.linkedin.com/in/tomás-sousa-a96507179/" target="_blank" rel="noreferrer">
               <FaLinkedinIn className="icon-link px-2" />
