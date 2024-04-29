@@ -22,13 +22,13 @@ const Footer = () => {
               <FaGithub className="fs-1 fs-md-2 px-2" />
             </a>
             <a href="https://www.linkedin.com/in/tomás-sousa-a96507179/" target="_blank" rel="noreferrer">
-              <FaLinkedinIn className="fs-1 fs-md-2 px-2" />
+              <FaLinkedinIn className="icon-link px-2" />
             </a>
             <a href="https://www.instagram.com/tomas.rafael.sousa/" target="_blank" rel="noreferrer">
-              <FaInstagram className="fs-1 fs-md-2 px-2" />
+              <FaInstagram className="icon-link px-2" />
             </a>
             <a href="mailto:tomas.003.sousa.13@gmail.com" target="_blank" rel="noreferrer">
-              <HiOutlineMail className="fs-1 fs-md-2 px-2" /> 
+              <HiOutlineMail className="icon-link px-2" /> 
             </a>
           </div>
         </div>
