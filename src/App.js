@@ -2,7 +2,7 @@
 import React from 'react';
 
 //PARTICLES
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef} from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -34,6 +34,15 @@ const App = () => {
 
   //PARTICLES
   const [loading, setLoading] = useState(true);
+
+  const containerRef = useRef();
+
+  useEffect(() => {
+    if (!loading && init) {
+      const contentHeight = document.querySelector('#main-content').offsetHeight;
+      containerRef.current.style.height = `${contentHeight}px`;
+    }
+  }, [loading, init]);
 
   //PARA DAR EFFEITO DE LOAD
   useEffect(() => {
@@ -82,7 +91,7 @@ const App = () => {
         <h2 className='coloredText'>Loading...</h2>
       </div>
       ) : (
-          <div className="w-100 bg-dark">
+          <div className="w-100 bg-dark" ref={containerRef}>
             {init ? (
               <Particles
                 id="tsparticles"
@@ -121,17 +130,19 @@ const App = () => {
                 }}
               />
             ) : null}
-              <HashRouter basename='/'>
-                <Routes>
-                  <Route path="/" element={<Layout/>}>
-                      <Route index element={<Homepage/>}/>
-                      <Route path="About" element={<About/>}/>
-                      <Route path="Projects" element={<Projects/>}/>
-                  </Route>
-                </Routes>
-                <Footer/>
-              </HashRouter>
-            </div>
+              <div id="main-content">
+            <HashRouter basename='/'>
+              <Routes>
+                <Route path="/" element={<Layout/>}>
+                  <Route index element={<Homepage/>}/>
+                  <Route path="About" element={<About/>}/>
+                  <Route path="Projects" element={<Projects/>}/>
+                </Route>
+              </Routes>
+              <Footer/>
+            </HashRouter>
+          </div>
+        </div>
         )}
       </div>
   );
