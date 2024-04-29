@@ -35,9 +35,11 @@ const App = () => {
   const containerRef = useRef();
 
   useEffect(() => {
-    const contentHeight = document.querySelector('#main-content').offsetHeight;
-    containerRef.current.style.height = `${contentHeight}px`;
-  });
+    if (!loading && init) {
+      const contentHeight = document.querySelector('#main-content').offsetHeight;
+      containerRef.current.style.height = `${contentHeight}px`;
+    }
+  }, [loading, init]);
 
   //PARTICLES
   const [loading, setLoading] = useState(true);
