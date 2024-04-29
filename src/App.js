@@ -86,6 +86,8 @@ const App = () => {
           {init ? (
             <Particles
               id="tsparticles"
+              width="100vw"
+              height="100vh"
               particlesLoaded={particlesLoaded}
               options={{
                 preset: "stars",
