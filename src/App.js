@@ -72,7 +72,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="vh-100 bg-dark">
       {loading ? (
         <div className="d-flex justify-content-center align-items-center vh-100 bg-dark">
         <h2 className='coloredText'>Loading...</h2>
@@ -117,7 +117,7 @@ const App = () => {
               }}
             />
           ) : null}
-          <div className="w-100 bg-dark">
+          <div>
             <HashRouter basename='/'>
               <Routes>
                 <Route path="/" element={<Layout/>}>
