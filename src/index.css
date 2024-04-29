@@ -7,10 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container-style {
-  height: 100vh;
-}
-
 #tsparticles {
   height: 100vh;
   position: absolute;

@@ -72,27 +72,23 @@ const App = () => {
 
     console.log(saveconfig);
   };
-
-  useEffect(() => {
-    console.log(init);
-  }, [init]);
  
   return (
     <div>
       {loading ? (
         <div className="d-flex justify-content-center align-items-center vh-100 bg-dark">
         <h2 className='coloredText'>Loading...</h2>
-      </div>
+        </div>
       ) : (
-        <>
+        <div className="w-100 bg-dark">
           {init ? (
-            <div className='container-style'>
               <Particles
                 id="tsparticles"
                 particlesLoaded={particlesLoaded}
                 options={{
                   fullScreen: {
                     enable:false,
+                    zIndex: 0,
                   },
                   preset: "stars",
                   background:{
@@ -122,9 +118,7 @@ const App = () => {
                   }
                 }}
               />
-            </div>
           ) : null}
-          <div className="w-100 bg-dark">
             <HashRouter basename='/'>
               <Routes>
                 <Route path="/" element={<Layout/>}>
@@ -136,7 +130,6 @@ const App = () => {
               <Footer/>
             </HashRouter>
           </div>
-        </>
       )}
     </div>
   );
