@@ -82,58 +82,60 @@ const App = () => {
         <h2 className='coloredText'>Loading...</h2>
       </div>
       ) : (
-          <div className="w-100 bg-dark">
-            {init ? (
-              <Particles
-                id="tsparticles"
-                particlesLoaded={particlesLoaded}
-                options={{
-                  fullScreen: {
-                    enable:false,
-                    zIndex:0
-                  },
-                  preset: "stars",
-                  background:{
-                    color: {
-                      value: "transparent",
-                    }
-                  },
-                  particles: {
-                    color: {
-                      value:"#ffffff"
-                    },
-                    number: {
-                      value: 100,
-                    },
-                    size: {
-                      value: 1,
-                      random: true,
-                    },
-                    move: {
-                      enable: true,
-                      speed: 1,
-                      direction: "random",
-                      random: false,
-                      straight: false,
-                      out_mode: "out",
-                    },
+        <>
+          {init ? (
+            <Particles
+              id="tsparticles"
+              particlesLoaded={particlesLoaded}
+              options={{
+                fullScreen: {
+                  enable:false,
+                  zIndex:0
+                },
+                preset: "stars",
+                background:{
+                  color: {
+                    value: "transparent",
                   }
-                }}
-              />
-            ) : null}
-              <HashRouter basename='/'>
-                <Routes>
-                  <Route path="/" element={<Layout/>}>
-                      <Route index element={<Homepage/>}/>
-                      <Route path="About" element={<About/>}/>
-                      <Route path="Projects" element={<Projects/>}/>
-                  </Route>
-                </Routes>
-                <Footer/>
-              </HashRouter>
-            </div>
-        )}
-      </div>
+                },
+                particles: {
+                  color: {
+                    value:"#ffffff"
+                  },
+                  number: {
+                    value: 100,
+                  },
+                  size: {
+                    value: 1,
+                    random: true,
+                  },
+                  move: {
+                    enable: true,
+                    speed: 1,
+                    direction: "random",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                  },
+                }
+              }}
+            />
+          ) : null}
+          <div className="w-100 bg-dark">
+            <HashRouter basename='/'>
+              <Routes>
+                <Route path="/" element={<Layout/>}>
+                    <Route index element={<Homepage/>}/>
+                    <Route path="About" element={<About/>}/>
+                    <Route path="Projects" element={<Projects/>}/>
+                </Route>
+              </Routes>
+              <Footer/>
+            </HashRouter>
+          </div>
+        </>
+      )}
+    </div>
   );
 }
 
