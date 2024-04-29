@@ -84,40 +84,38 @@ const App = () => {
       ) : (
         <>
           {init ? (
-            <div className="particles-container">
-              <Particles
-                id="tsparticles"
-                particlesLoaded={particlesLoaded}
-                options={{
-                  preset: "stars",
-                  background:{
-                    color: {
-                      value: "transparent",
-                    }
-                  },
-                  particles: {
-                    color: {
-                      value:"#ffffff"
-                    },
-                    number: {
-                      value: 100,
-                    },
-                    size: {
-                      value: 1,
-                      random: true,
-                    },
-                    move: {
-                      enable: true,
-                      speed: 1,
-                      direction: "random",
-                      random: false,
-                      straight: false,
-                        out_mode: "out",
-                    },
+            <Particles
+              id="tsparticles"
+              particlesLoaded={particlesLoaded}
+              options={{
+                preset: "stars",
+                background:{
+                  color: {
+                    value: "transparent",
                   }
-                }}
-              />
-            </div>
+                },
+                particles: {
+                  color: {
+                    value:"#ffffff"
+                  },
+                  number: {
+                    value: 100,
+                  },
+                  size: {
+                    value: 1,
+                    random: true,
+                  },
+                  move: {
+                    enable: true,
+                    speed: 1,
+                    direction: "random",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                  },
+                }
+              }}
+            />
           ) : null}
           <div className="w-100 bg-dark">
             <HashRouter basename='/'>
