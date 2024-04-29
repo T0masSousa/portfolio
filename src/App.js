@@ -88,10 +88,6 @@ const App = () => {
               id="tsparticles"
               particlesLoaded={particlesLoaded}
               options={{
-                fullScreen: {
-                  enable:false,
-                  zIndex:0
-                },
                 preset: "stars",
                 background:{
                   color: {
