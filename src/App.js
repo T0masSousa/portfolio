@@ -38,17 +38,25 @@ const App = () => {
   const containerRef = useRef();
 
   useEffect(() => {
-    if (!loading && init) {
-      const contentHeight = document.querySelector('#main-content').offsetHeight;
-      containerRef.current.style.height = `${contentHeight}px`;
-    }
+    const updateHeight = () => {
+      if (!loading && init) {
+        const contentHeight = document.querySelector('#main-content').offsetHeight;
+        containerRef.current.style.height = `${contentHeight}px`;
+      }
+    };
+
+    window.addEventListener('load', updateHeight);
+
+    return () => {
+      window.removeEventListener('load', updateHeight);
+    };
   }, [loading, init]);
 
   //PARA DAR EFFEITO DE LOAD
   useEffect(() => {
 
     //PASSADOS 3 SEGUNDOS, O LOADING DESAPARECE
-    const timer = setTimeout(() => setLoading(false), 3000);
+    const timer = setTimeout(() => setLoading(false), 4000);
     
     //RETIRAR O TIMER
     return () => clearTimeout(timer);
