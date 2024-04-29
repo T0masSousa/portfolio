@@ -67,6 +67,11 @@ const App = () => {
 
   }, []);
 
+  tsParticles.load("tsparticles", {
+    width: "100vw",
+    height: "100vh",
+  });
+
   const particlesLoaded = (container) => {
     const saveconfig = container;
   };
