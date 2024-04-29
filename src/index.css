@@ -7,6 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#tsparticles > canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+}
+
 .card.outlineCards {
 
   border: 3px solid #0a58ca !important;
