@@ -26,10 +26,10 @@ const Layout = () => {
                         <Logo className="text-start ms-3 pt-3 pb-4" width="20%" heigth="20%"/>
                     </Link>
                     <div className="ms-auto d-flex pe-5">
-                        <Link to="/About" className={`text-decoration-none text-white link-hover ${selectedLink === '/About' ? 'active' : ''}`} onClick={() => setSelectedLink('/About')}>
+                        <Link to="/About" className={`pe-2 text-decoration-none text-white link-hover ${selectedLink === '/About' ? 'active' : ''}`} onClick={() => setSelectedLink('/About')}>
                             <p className="text-end mx-2">About</p>
                         </Link>
-                        <Link to="/Projects" className={`text-decoration-none text-white link-hover ${selectedLink === '/Projects' ? 'active' : ''}`} onClick={() => setSelectedLink('/Projects')}>
+                        <Link to="/Projects" className={`ps-2 text-decoration-none text-white link-hover ${selectedLink === '/Projects' ? 'active' : ''}`} onClick={() => setSelectedLink('/Projects')}>
                             <p className="text-end mx-2">Projects</p>
                         </Link>
                     </div>
