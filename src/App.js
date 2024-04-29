@@ -5,7 +5,6 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { tsParticles } from "@tsparticles/react";
 
 
 //CSS File
@@ -68,11 +67,6 @@ const App = () => {
 
   }, []);
 
-  tsParticles.load("tsparticles", {
-    width: "100vw",
-    height: "100vh",
-  });
-
   const particlesLoaded = (container) => {
     const saveconfig = container;
   };
@@ -90,7 +84,7 @@ const App = () => {
       ) : (
         <>
           {init ? (
-            <Particles className='vh-100'
+            <Particles
               id="tsparticles"
               particlesLoaded={particlesLoaded}
               options={{
