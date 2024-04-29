@@ -19,13 +19,13 @@ const Footer = () => {
         <div className="col-md-4">
           <div>
             <a href="https://github.com/T0masSousa" target="_blank" rel="noreferrer">
-              <FaGithub className="fs-2 px-2" />
+              <FaGithub className="fs-md-2 fs-sm-1 px-2" />
             </a>
             <a href="https://www.linkedin.com/in/tomás-sousa-a96507179/" target="_blank" rel="noreferrer">
-              <FaLinkedinIn className="fs-2 px-2" />
+              <FaLinkedinIn className="fs-md-2 fs-sm-1 px-2" />
             </a>
             <a href="https://www.instagram.com/tomas.rafael.sousa/" target="_blank" rel="noreferrer">
-              <FaInstagram className="fs-2 px-2" />
+              <FaInstagram className="fs-md-2 fs-sm-1 px-2" />
             </a>
             <a href="mailto:tomas.003.sousa.13@gmail.com" target="_blank" rel="noreferrer">
               <HiOutlineMail className="fs-1 px-2" /> 
