@@ -66,6 +66,10 @@ body {
   .icon-link {
     font-size: 2rem;
   }
+
+  .particles-container {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 1200px) { /* Extra large devices (large desktops, 1200px and up) */

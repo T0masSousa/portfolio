@@ -84,7 +84,7 @@ const App = () => {
       ) : (
         <>
           {init ? (
-            <div style={{ height: 'auto'}}>
+            <div className="particles-container">
               <Particles
                 id="tsparticles"
                 particlesLoaded={particlesLoaded}
