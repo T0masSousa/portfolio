@@ -5,6 +5,7 @@ body {
   font-family: "Outfit", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #212529;
 }
 
 .card.outlineCards {
