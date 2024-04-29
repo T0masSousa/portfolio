@@ -39,6 +39,7 @@ body {
   bottom: 15px;
 }
 
-.link-hover:hover::after {
+.link-hover:hover::after,
+.link-hover.active::after {
   width: 100%;
 }
