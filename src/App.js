@@ -35,21 +35,6 @@ const App = () => {
   //PARTICLES
   const [loading, setLoading] = useState(true);
 
-  //PARA O PARTICLES OCUPAR A PÁGINA TODA
-  useEffect(() => {
-
-    //OBTENÇÃO DO CANVAS
-    const canvas = document.querySelector('#tsparticles > canvas');
-    
-    //SE EXISTIR O CANVAS
-    if (canvas) {
-      
-      //DEFINIR O TAMANHO DO CANVAS
-      canvas.style.width = '100vw';
-      canvas.style.height = '100vh';
-    }
-  });
-
   //PARA DAR EFFEITO DE LOAD
   useEffect(() => {
 
