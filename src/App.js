@@ -72,7 +72,7 @@ const App = () => {
   };
 
   return (
-    <div className="vh-100 bg-dark">
+    <div className="w-100 bg-dark" id='bigvh'>
       {loading ? (
         <div className="d-flex justify-content-center align-items-center vh-100 bg-dark">
         <h2 className='coloredText'>Loading...</h2>

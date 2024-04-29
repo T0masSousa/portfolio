@@ -69,8 +69,14 @@ body {
   
 }
 
-@media (min-width: 1200px) { /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { /* Extra large devices*/
   .icon-link {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1650px) { /* Extra large devices (large desktops, 1200px and up) */
+  #bigvh{
+    height: 100vh;
   }
 }
