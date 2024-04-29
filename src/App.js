@@ -71,10 +71,6 @@ const App = () => {
     const saveconfig = container;
   };
 
-  useEffect(() => {
-    console.log(init);
-  }, [init]);
- 
   return (
     <div>
       {loading ? (
@@ -88,6 +84,10 @@ const App = () => {
               id="tsparticles"
               particlesLoaded={particlesLoaded}
               options={{
+                fullScreen: {
+                  enable: true,
+                  zIndex: -1
+                },
                 preset: "stars",
                 background:{
                   color: {
