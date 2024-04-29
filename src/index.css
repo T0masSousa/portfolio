@@ -8,7 +8,6 @@ body {
 }
 
 #tsparticles {
-  height: 100vh;
   position: absolute;
   left: 0;
   right: 0;

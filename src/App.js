@@ -2,7 +2,7 @@
 import React from 'react';
 
 //PARTICLES
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -31,6 +31,13 @@ import Footer from './Components/Footer';
 
 //FUNÇÃO EXPORTADA
 const App = () => {
+
+  const containerRef = useRef();
+
+  useEffect(() => {
+    const contentHeight = document.querySelector('.bg-dark').offsetHeight;
+    containerRef.current.style.height = `${contentHeight}px`;
+  });
 
   //PARTICLES
   const [loading, setLoading] = useState(true);
