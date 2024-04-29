@@ -2,7 +2,7 @@
 import React from 'react';
 
 //PARTICLES
-import { useEffect, useState, useRef} from "react";
+import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -35,28 +35,11 @@ const App = () => {
   //PARTICLES
   const [loading, setLoading] = useState(true);
 
-  const containerRef = useRef();
-
-  useEffect(() => {
-    const updateHeight = () => {
-      if (!loading && init) {
-        const contentHeight = document.querySelector('#main-content').offsetHeight;
-        containerRef.current.style.height = `${contentHeight}px`;
-      }
-    };
-
-    window.addEventListener('load', updateHeight);
-
-    return () => {
-      window.removeEventListener('load', updateHeight);
-    };
-  }, [loading, init]);
-
   //PARA DAR EFFEITO DE LOAD
   useEffect(() => {
 
     //PASSADOS 3 SEGUNDOS, O LOADING DESAPARECE
-    const timer = setTimeout(() => setLoading(false), 4000);
+    const timer = setTimeout(() => setLoading(false), 3000);
     
     //RETIRAR O TIMER
     return () => clearTimeout(timer);
@@ -99,7 +82,7 @@ const App = () => {
         <h2 className='coloredText'>Loading...</h2>
       </div>
       ) : (
-          <div className="w-100 bg-dark" ref={containerRef}>
+          <div className="w-100 bg-dark">
             {init ? (
               <Particles
                 id="tsparticles"
@@ -138,19 +121,17 @@ const App = () => {
                 }}
               />
             ) : null}
-              <div id="main-content">
-            <HashRouter basename='/'>
-              <Routes>
-                <Route path="/" element={<Layout/>}>
-                  <Route index element={<Homepage/>}/>
-                  <Route path="About" element={<About/>}/>
-                  <Route path="Projects" element={<Projects/>}/>
-                </Route>
-              </Routes>
-              <Footer/>
-            </HashRouter>
-          </div>
-        </div>
+              <HashRouter basename='/'>
+                <Routes>
+                  <Route path="/" element={<Layout/>}>
+                      <Route index element={<Homepage/>}/>
+                      <Route path="About" element={<About/>}/>
+                      <Route path="Projects" element={<Projects/>}/>
+                  </Route>
+                </Routes>
+                <Footer/>
+              </HashRouter>
+            </div>
         )}
       </div>
   );
