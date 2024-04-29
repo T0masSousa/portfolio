@@ -117,7 +117,7 @@ const App = () => {
               }}
             />
           ) : null}
-          <div className="w-100 bg-dark">
+          <div className="w-100 h-100 bg-dark">
             <HashRouter basename='/'>
               <Routes>
                 <Route path="/" element={<Layout/>}>
