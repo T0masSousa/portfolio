@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-canvas {
+#tsparticles canvas {
 
   width: 100vw !important;
   height: 100vh !important;

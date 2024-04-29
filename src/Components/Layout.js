@@ -22,7 +22,7 @@ const Layout = () => {
         <div>
             <nav className="navbar d-flex align-items-center">
                 <div className="d-flex align-items-center w-100">
-                    <Link to="/">
+                    <Link to="/" onClick={() => setSelectedLink('/')}>
                         <Logo className="text-start ms-3 pt-3 pb-4" width="20%" heigth="20%"/>
                     </Link>
                     <div className="ms-auto d-flex pe-5">
