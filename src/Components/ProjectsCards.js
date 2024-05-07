@@ -52,13 +52,13 @@ const ProjectsCards = () => {
 
                 <div className='row'>
                     
-                    <div className='col-md-7 d-flex align-items-center'>
+                    <div className='col-md-6 d-flex align-items-center'>
                         
                         <img src={project.image} className="card-img-top mx-auto" alt={project.title} />
                     
                     </div>
 
-                    <div className='col-md-5'>
+                    <div className='col-md-6'>
 
                         <div className="card-body">
 
@@ -68,7 +68,7 @@ const ProjectsCards = () => {
 
                                 {project.languages.map((language, index) => (
 
-                                    <span key={index} className="mr-2">{language} </span>
+                                    <span key={index} className="mr-2"> {language} </span>
 
                                 ))}
                             </p>
