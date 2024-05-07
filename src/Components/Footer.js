@@ -14,7 +14,7 @@ const Footer = () => {
           <p>Copyright © 2024</p>
         </div>
         <div className="col-md-4">
-          <p>Hosted by GitHub Pages</p>
+          <p>Hosted by GitHub Pages and built with React</p>
         </div>
         <div className="col-md-4">
           <div>
