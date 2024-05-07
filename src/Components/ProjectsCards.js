@@ -62,9 +62,9 @@ const ProjectsCards = () => {
 
                         <div className="card-body">
 
-                            <h5 className="card-title mb-3 colorTitle" style={{fontSize: '1.2rem'}}>{project.title}</h5>
+                            <h5 className="card-title mb-3 colorTitle">{project.title}</h5>
 
-                            <p className="card-text" style={{fontStyle:'italic',fontSize: '0.8rem'}}>
+                            <p className="card-text" style={{fontStyle:'italic'}}>
 
                                 {project.languages.map((language, index) => (
 
