@@ -16,7 +16,7 @@ const info ="I welcome you to my Portfolio. I am a Full Stack Developer and I am
         <div>
             <div className="container">
                 <div className='row'>
-                    <div className="col-md-12 pt-5 pb-4">
+                    <div className="col-md-12 pt-5 pb-1">
                         <h4 className='text-end text-white'>Hi! My name is <n className="fw-bolder coloredText">Tomás Sousa</n></h4>
                     </div>
                     
@@ -26,7 +26,7 @@ const info ="I welcome you to my Portfolio. I am a Full Stack Developer and I am
                          <img src={HomepageImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: window.innerWidth <= 768 ? '300px' : '450px'}} />
                     </div>  
                     <div className="col-md-6 mt-auto mb-auto">                        
-                    <div className='pt-2'>
+                    <div>
                         <p className='fs-5 text-white'>{info}</p>
                     </div>
                             
