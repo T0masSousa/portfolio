@@ -52,13 +52,13 @@ const ProjectsCards = () => {
 
                 <div className='row'>
                     
-                    <div className='col-md-4 d-flex align-items-center'>
+                    <div className='col-md-8 d-flex align-items-center'>
                         
                         <img src={project.image} className="card-img-top mx-auto" alt={project.title} />
                     
                     </div>
 
-                    <div className='col-md-8'>
+                    <div className='col-md-4'>
 
                         <div className="card-body">
 
