@@ -32,7 +32,7 @@ body {
 }
 
 .card.outlineCards:hover {
-  border-color: #0a58ca;
+  border-bottom-color: #0a58ca;
 }
 
 .card.outlineCards:hover::before {
