@@ -15,7 +15,7 @@ body {
 }
 
 .card.outlineCards {
-  border: 3px solid transparent !important;
+  border-bottom: 3px solid transparent !important;
   transition: border .3s ease-in-out;
   position: relative;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .card.outlineCards:hover {
-  border-color: #0a58ca;
+  border-bottom-color: #0a58ca;
 }
 
 .card.outlineCards:hover::before {

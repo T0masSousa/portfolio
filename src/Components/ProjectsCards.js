@@ -64,7 +64,7 @@ const ProjectsCards = () => {
 
                             <h5 className="card-title mb-3 colorTitle">{project.title}</h5>
 
-                            <p className="card-text fs-6" style={{fontStyle:'italic'}}>
+                            <p className="card-text fs-6" style={{fontStyle:'italic'}}> Made with: 
 
                                 {project.languages.map((language, index) => (
 
