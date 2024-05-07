@@ -14,12 +14,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.card.outlineCards {
-
+..card.outlineCards {
   border: 3px solid transparent !important;
   transition: border .3s ease-in-out;
   position: relative;
-
 }
 
 .card.outlineCards::before {
@@ -28,7 +26,7 @@ body {
   top: 0;
   right: 0;
   width: 0;
-  height: 0;
+  height: 3px;
   background: #0a58ca;
   transition: width .3s;
 }

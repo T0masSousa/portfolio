@@ -52,19 +52,19 @@ const ProjectsCards = () => {
 
                 <div className='row'>
                     
-                    <div className='col-md-8 d-flex align-items-center'>
+                    <div className='col-md-7 d-flex align-items-center'>
                         
                         <img src={project.image} className="card-img-top mx-auto" alt={project.title} />
                     
                     </div>
 
-                    <div className='col-md-4'>
+                    <div className='col-md-5'>
 
                         <div className="card-body">
 
                             <h5 className="card-title mb-3 colorTitle">{project.title}</h5>
 
-                            <p className="card-text" style={{fontStyle:'italic'}}>
+                            <p className="card-text fs-6" style={{fontStyle:'italic'}}>
 
                                 {project.languages.map((language, index) => (
 
