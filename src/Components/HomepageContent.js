@@ -23,7 +23,7 @@ const info ="I welcome you to my Portfolio. I am a Full Stack Developer and I am
                     <div>
                     <h4 className='text-end text-white'>Hi! My name is <n className="fw-bolder coloredText">Tomás Sousa</n></h4>
 
-                        <p className='fs-5 text-white'>{info}</p>
+                        <p className='fs-6 text-white'>{info}</p>
                     </div>
                             
                     </div>           
