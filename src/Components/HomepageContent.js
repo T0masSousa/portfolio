@@ -15,18 +15,14 @@ const info ="I welcome you to my Portfolio. I am a Full Stack Developer and I am
     return(
         <div>
             <div className="container">
-                <div className='row'>
-                    <div className="col-md-12 pt-5 pb-1">
-                        <h4 className='text-end text-white'>Hi! My name is <n className="fw-bolder coloredText">Tomás Sousa</n></h4>
-                    </div>
-                    
-                </div>
                 <div className="row pb-5 mb-5">
                     <div className="col-md-6 text-center">
                          <img src={HomepageImage} alt="Illustration Representing a Web Developer at their job." className="img-fluid" style={{ maxHeight: window.innerWidth <= 768 ? '300px' : '450px'}} />
                     </div>  
                     <div className="col-md-6 mt-auto mb-auto">                        
                     <div>
+                    <h4 className='text-end text-white'>Hi! My name is <n className="fw-bolder coloredText">Tomás Sousa</n></h4>
+
                         <p className='fs-5 text-white'>{info}</p>
                     </div>
                             
