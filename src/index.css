@@ -14,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-..card.outlineCards {
+.card.outlineCards {
   border: 3px solid transparent !important;
   transition: border .3s ease-in-out;
   position: relative;
