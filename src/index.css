@@ -43,6 +43,10 @@ body {
   color: #0a58ca !important;
 }
 
+.card-text {
+  font-size: 0.8rem !important;
+}
+
 .coloredText{
 
   color: #0a58ca;
