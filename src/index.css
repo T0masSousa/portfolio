@@ -75,6 +75,13 @@ body {
   width: 100%;
 }
 
+.footer-fixed-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 /*DEFAULT SIZE DA FONTE*/
 .icon-link {
   font-size: 3.5rem; /* Extra small devices */

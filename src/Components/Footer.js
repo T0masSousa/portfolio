@@ -7,7 +7,7 @@ import { HiOutlineMail } from "react-icons/hi";
 const Footer = () => {
 
   return (
-    <footer className="text-white text-center p-3">
+    <footer className="text-white text-center p-3 footer-fixed-bottom">
     <div className="container">
       <div className="row">
         <div className="col-md-4">
