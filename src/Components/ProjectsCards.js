@@ -32,8 +32,23 @@ const ProjectsCards = () => {
         image: require('../Imgs/Projects/Musix.png'),
         description: "In this recent project, I leveraged my newly acquired React skills to create a web app that combines my passions for coding and music. Users can search for songs by name or artist, and the app fetches song data from Spotify's Web API. If users opt for lyrics, the app uses a CORS server to request data from the Genius API. For videoclips, it uses the Spotify data to request from the YouTube Data API and displays the most viewed playable video. I integrated Google Firestore for user authentication and data storage, enabling users to add and remove favorite songs. The app also provides feedback on user actions such as saving or removing favorites, login errors, and API request errors.",
         languages: ['React', 'CSS'],
+
     },
+    {
+      title: 'Trilhos Digitais',
+      image: require('../Imgs/Projects/Trilhos_Digitais.png'),
+      description: "In this project, I worked with a team to develop a gamified website supported by Firebase's Auth and Firestore Database as my final project to complete my degree. This one was about showing some content about Multimedia and its history while giving some minigames, quizzes and elements that the user could interact with and earn as badges. This website incorporated some 3D and AR elements.",
+      languages:['React', 'Nextjs', 'Typescript', 'React Three Fiber', 'React Three XR', 'Framer-Motion'],
+      link: 'https://trilhosdigitais.vercel.app/'
+    }
   ];
+
+  const handleProjectClick = (link) => {
+    if (link) {
+      window.location.href = link;
+    }
+  };
+
 
   //INTERFACE
   return (
@@ -46,7 +61,7 @@ const ProjectsCards = () => {
 
         {projects.map((project, index) => (
 
-          <div className="col-12 mb-5" key={index}>
+          <div className="col-12 mb-5" key={index} onClick={() => handleProjectClick(project.link)}>
 
             <div className="card bg-transparent text-white outlineCards px-4">
 
