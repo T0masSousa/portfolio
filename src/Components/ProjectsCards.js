@@ -61,7 +61,7 @@ const ProjectsCards = () => {
 
         {projects.map((project, index) => (
 
-          <div className="col-12 mb-5" key={index} onClick={() => handleProjectClick(project.link)}>
+          <div className="col-12 mb-5" key={index} onClick={() => handleProjectClick(project.link)} style={{ cursor: project.link ? 'pointer' : 'default' }}>
 
             <div className="card bg-transparent text-white outlineCards px-4">
 
