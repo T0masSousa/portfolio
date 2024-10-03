@@ -32,7 +32,7 @@ const VisitPortfolio = () => {
 
 export default VisitPortfolio;
 
-import VisitPortfolio from ''../components/VisitPortfolio.js;
+import VisitPortfolio from '../components/VisitPortfolio.js';
 
 .
 .
