@@ -53,7 +53,7 @@ const ProjectsCards = () => {
     },
     {
       title: "TDW Blog",
-      image: require("../Imgs/Projects/Movie_Time.png"),
+      image: require("../Imgs/Projects/Contetful.png"),
       description:
         "In this solo project, I took a already designed web application and made it work with a Content Management System (Contentful) and also put into practice some knowledge about pipelines, CMS integrations, Cron Jobs and a few other concepts. I cannot take credit for its appearance as its goal was only to see and to evaluate my CI/CD capacities. This project was deploy twice. On with Github Actions workflow and one with Circle CI workflow.",
       languages: [
@@ -70,7 +70,7 @@ const ProjectsCards = () => {
         "Github Actions",
         "Circle CI",
       ],
-      link: "https://mp2tomassousa.vercel.app/",
+      link: "https://miniprojeto-tdw-githubactions.vercel.app/",
     },
     {
       title: "Movie Time",
@@ -154,6 +154,7 @@ const ProjectsCards = () => {
                         <span key={index} className="mr-2">
                           {" "}
                           {language}{" "}
+                          {index < project.languages.length - 1 && " |"}
                         </span>
                       ))}
                     </p>
