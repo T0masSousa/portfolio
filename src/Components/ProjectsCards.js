@@ -53,7 +53,7 @@ const ProjectsCards = () => {
     },
     {
       title: "TDW Blog",
-      image: require("../Imgs/Projects/Contetful.png"),
+      image: require("../Imgs/Projects/Contentful.png"),
       description:
         "In this solo project, I took a already designed web application and made it work with a Content Management System (Contentful) and also put into practice some knowledge about pipelines, CMS integrations, Cron Jobs and a few other concepts. I cannot take credit for its appearance as its goal was only to see and to evaluate my CI/CD capacities. This project was deploy twice. On with Github Actions workflow and one with Circle CI workflow.",
       languages: [
