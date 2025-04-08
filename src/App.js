@@ -1,49 +1,44 @@
 //REACT
-import React from 'react';
+import React from "react";
 
 //PARTICLES
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-
 //CSS File
-import './App.css';
-import './index.css';
+import "./App.css";
+import "./index.css";
 
 //BOOTSTRAP
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 //NAVEGAR
-import {Routes, Route, HashRouter} from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 //COMPONENTES QUE VÃO ESTAR NO NAVs
-import Homepage from './Pages/Homepage';
-import About from './Pages/About';
-import Projects from './Pages/Projects';
+import Homepage from "./Pages/Homepage";
+import About from "./Pages/About";
+import Projects from "./Pages/Projects";
 
 //RESTO DOS COMPONENTES
-import Layout from './Components/Layout';
+import Layout from "./Components/Layout";
 
 //FOOTER
-import Footer from './Components/Footer';
-
+import Footer from "./Components/Footer";
 
 //FUNÇÃO EXPORTADA
 const App = () => {
-
   //PARTICLES
   const [loading, setLoading] = useState(true);
 
   //PARA DAR EFFEITO DE LOAD
   useEffect(() => {
-
     //PASSADOS 3 SEGUNDOS, O LOADING DESAPARECE
     const timer = setTimeout(() => setLoading(false), 3000);
-    
+
     //RETIRAR O TIMER
     return () => clearTimeout(timer);
-
   }, []);
 
   //PARA INICIAR O PARTICLES
@@ -51,32 +46,27 @@ const App = () => {
 
   //PARA INICIAR O PARTICLES
   useEffect(() => {
-
     //INICIAR O PARTICLES
     initParticlesEngine(async (engine) => {
-      
       //CARREGAR O PARTICLES
       await loadSlim(engine);
-      
     }).then(() => {
-
       //INICIAR O PARTICLES
       setInit(true);
-
     });
-
   }, []);
 
   const particlesLoaded = (container) => {
     const saveconfig = container;
+    return saveconfig;
   };
 
   return (
-    <div className="w-100 bg-dark" id='bigvh'>
+    <div className="w-100 bg-dark" id="bigvh">
       {loading ? (
         <div className="d-flex justify-content-center align-items-center vh-100 bg-dark">
-        <h2 className='coloredText'>Loading...</h2>
-      </div>
+          <h2 className="coloredText">Loading...</h2>
+        </div>
       ) : (
         <>
           {init ? (
@@ -86,17 +76,17 @@ const App = () => {
               options={{
                 fullScreen: {
                   enable: true,
-                  zIndex: -1
+                  zIndex: -1,
                 },
                 preset: "stars",
-                background:{
+                background: {
                   color: {
                     value: "transparent",
-                  }
+                  },
                 },
                 particles: {
                   color: {
-                    value:"#ffffff"
+                    value: "#ffffff",
                   },
                   number: {
                     value: 100,
@@ -113,26 +103,26 @@ const App = () => {
                     straight: false,
                     out_mode: "out",
                   },
-                }
+                },
               }}
             />
           ) : null}
           <div>
-            <HashRouter basename='/'>
+            <HashRouter basename="/">
               <Routes>
-                <Route path="/" element={<Layout/>}>
-                    <Route index element={<Homepage/>}/>
-                    <Route path="About" element={<About/>}/>
-                    <Route path="Projects" element={<Projects/>}/>
+                <Route path="/" element={<Layout />}>
+                  <Route index element={<Homepage />} />
+                  <Route path="About" element={<About />} />
+                  <Route path="Projects" element={<Projects />} />
                 </Route>
               </Routes>
-              <Footer/>
+              <Footer />
             </HashRouter>
           </div>
         </>
       )}
     </div>
   );
-}
+};
 
 export default App;
