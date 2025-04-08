@@ -154,7 +154,9 @@ const ProjectsCards = () => {
                         <span key={index} className="mr-2">
                           {" "}
                           {language}{" "}
-                          {index < project.languages.length - 1 && " |"}
+                          {index < project.languages.length - 1 && (
+                            <span className="text-primary"> | </span>
+                          )}
                         </span>
                       ))}
                     </p>
