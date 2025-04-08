@@ -76,7 +76,7 @@ const ProjectsCards = () => {
       title: "Movie Time",
       image: require("../Imgs/Projects/Movie_Time.png"),
       description:
-        "In this solo project, I developed a web application that allows users to quickly and intuitively search for information about their favorite movies. This application uses the OMDB (Open Movie Database) API to retrieve detailed data about movies, such as title, release year, director, cast, genre, and ratings. Additionally, to provide an even more complete experience, Movie Time also makes requests to the YouTube Data API to fetch official trailers or related videos for the searched movies. With a simple and functional design, the goal of this project is to offer users a practical way to explore and discover new movies, as well as watch trailers directly on the platform. Besides all of this, this project also integrates my most recently acquired knowledge on CI/CD practices.",
+        "In this solo project, I developed a web application that allows users to quickly and intuitively search for information about their favorite movies. This application uses the OMDB (Open Movie Database) API to retrieve detailed data about movies. Additionally, to provide an even more complete experience, Movie Time also makes requests to the YouTube Data API to fetch official trailers or related videos for the searched movies. All this data can be filtered and sorted and besides all of these features, this project also integrates my most recently acquired knowledge on CI/CD practices.",
       languages: [
         "React",
         "EsLint",
