@@ -105,6 +105,19 @@ const ProjectsCards = () => {
         "React",
       ],
     },
+    {
+      title: "Ser+",
+      image: require("../Imgs/Projects/SerPlus.png"),
+      description:
+        "In this project, I worked with the Campus Lab R&D Team to develop a mobile app for NEA (Núcleo de Estudantes de Aveiro), from the University of Aveiro. The app was designed to encourage and track students' participation in extracurricular activities, helping them build skills, character, and a more well-rounded academic experience through badge and certificate earning, soft skills recognition, and much more.",
+      languages: [
+        "React Native with Expo",
+        "TypeScript",
+        "NodeJs",
+        "Github Actions",
+        "GraphQL",
+      ],
+    },
   ];
 
   const handleProjectClick = (link) => {
