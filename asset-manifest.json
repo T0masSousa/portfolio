@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e4fec089.css",
-    "main.js": "/portfolio/static/js/main.5966f632.js",
+    "main.js": "/portfolio/static/js/main.9c521366.js",
     "static/js/1927.c316a944.chunk.js": "/portfolio/static/js/1927.c316a944.chunk.js",
     "static/js/7590.99fa2421.chunk.js": "/portfolio/static/js/7590.99fa2421.chunk.js",
     "static/js/6725.652bd60c.chunk.js": "/portfolio/static/js/6725.652bd60c.chunk.js",
@@ -71,6 +71,7 @@
     "static/js/4265.2024900b.chunk.js": "/portfolio/static/js/4265.2024900b.chunk.js",
     "static/js/4494.796ff03f.chunk.js": "/portfolio/static/js/4494.796ff03f.chunk.js",
     "static/js/4290.136d0558.chunk.js": "/portfolio/static/js/4290.136d0558.chunk.js",
+    "static/media/SerPlus.png": "/portfolio/static/media/SerPlus.f93b99646e8a5872a2eb.png",
     "static/media/Top_Indian_Movies.png": "/portfolio/static/media/Top_Indian_Movies.d296183b50f97ecc1cda.png",
     "static/media/BetLearn.png": "/portfolio/static/media/BetLearn.c59026f289804c7b8785.png",
     "static/media/Trilhos_Digitais.png": "/portfolio/static/media/Trilhos_Digitais.12cea610b6a070f56ba7.png",
@@ -81,10 +82,10 @@
     "static/media/Chronos.png": "/portfolio/static/media/Chronos.5d98f9138304bfe7e3c7.png",
     "static/media/The_Evolution_Of_Life.png": "/portfolio/static/media/The_Evolution_Of_Life.50342a534ebbd179d14b.png",
     "static/media/Musix.png": "/portfolio/static/media/Musix.66cb57889cdd7a9a2e3d.png",
-    "static/media/LOGO.svg": "/portfolio/static/media/LOGO.74a7c91b696dada8c170ec2da77886e4.svg",
+    "static/media/LOGO.svg": "/portfolio/static/media/LOGO.a1dada42f891922c238908fa02d85372.svg",
     "index.html": "/portfolio/index.html",
     "main.e4fec089.css.map": "/portfolio/static/css/main.e4fec089.css.map",
-    "main.5966f632.js.map": "/portfolio/static/js/main.5966f632.js.map",
+    "main.9c521366.js.map": "/portfolio/static/js/main.9c521366.js.map",
     "1927.c316a944.chunk.js.map": "/portfolio/static/js/1927.c316a944.chunk.js.map",
     "7590.99fa2421.chunk.js.map": "/portfolio/static/js/7590.99fa2421.chunk.js.map",
     "6725.652bd60c.chunk.js.map": "/portfolio/static/js/6725.652bd60c.chunk.js.map",
@@ -157,6 +158,6 @@
   },
   "entrypoints": [
     "static/css/main.e4fec089.css",
-    "static/js/main.5966f632.js"
+    "static/js/main.9c521366.js"
   ]
 }
